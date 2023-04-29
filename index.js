@@ -22,29 +22,31 @@ import u from "ak-tools";
  * @param  {Config} config
  */
 async function main(config) {
-    console.log(config);
-    return config;
+	console.log(config);
+	return config;
 }
 
 export default main;
 
 if (esMain(import.meta)) {
-    if (process.argv.length == 2) {
-        //no yargs... boot up UI
-        server();
-    } else {
-        const params = cli();
+	if (process.argv.length == 2) {
+		//no yargs... boot up UI
+		server();
+	} else {
+		const params = cli();
 
-        main(params)
-            .then(() => {
-                //noop
-            })
-            .catch(e => {
-                console.log(`\nuh oh! something didn't work...\nthe error message is:\n\n\t${e.message}\n\n`);
-            })
-            .finally(() => {
-                console.log("\n\nhave a great day!\n\n");
-                process.exit(0);
-            });
-    }
+		main(params)
+			.then(() => {
+				//noop
+			})
+			.catch((e) => {
+				console.log(
+					`\nuh oh! something didn't work...\nthe error message is:\n\n\t${e.message}\n\n`
+				);
+			})
+			.finally(() => {
+				console.log("\n\nhave a great day!\n\n");
+				process.exit(0);
+			});
+	}
 }

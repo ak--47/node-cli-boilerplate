@@ -4,7 +4,7 @@
     "files.exclude": {
         "**/node_modules": true
     },
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "typescript.implementationsCodeLens.enabled": true,
     "cSpell.words": [
         "accum",

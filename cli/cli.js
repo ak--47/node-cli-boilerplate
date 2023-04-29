@@ -8,40 +8,40 @@ const { name: NAME, version: VERSION } = require("../package.json");
  * @return {Config}
  */
 function cli() {
-    const args = yargs(process.argv.splice(2))
-        .scriptName(NAME)
-        .usage(
-            `${welcome}\n\nusage:\nnpx ${NAME} --yes [file or folder] [options]
+	const args = yargs(process.argv.splice(2))
+		.scriptName(NAME)
+		.usage(
+			`${welcome}\n\nusage:\nnpx ${NAME} --yes [file or folder] [options]
 
 examples:
 npx  --yes  ${NAME} 
 npx  --yes  ${NAME} 
 
 DOCS: https://github.com/ak--47/`
-        )
-        .option("foo", {
-            demandOption: true,
-            describe: "baz",
-            type: "string",
-            default: "foo"
-        })
-        .option("bar", {
-            demandOption: true,
-            describe: "baz",
-            type: "number",
-            default: 42
-        })
-        .option("baz", {
-            demandOption: true,
-            describe: "baz",
-            type: "boolean",
-            default: false
-        })
+		)
+		.option("foo", {
+			demandOption: true,
+			describe: "baz",
+			type: "string",
+			default: "foo",
+		})
+		.option("bar", {
+			demandOption: true,
+			describe: "baz",
+			type: "number",
+			default: 42,
+		})
+		.option("baz", {
+			demandOption: true,
+			describe: "baz",
+			type: "boolean",
+			default: false,
+		})
 
-        .help().argv;
+		.help().argv;
 
-    // @ts-ignore
-    return args;
+	// @ts-ignore
+	return args;
 }
 
 export default cli;
