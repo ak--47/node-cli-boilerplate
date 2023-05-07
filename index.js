@@ -19,7 +19,7 @@ import u from "ak-tools";
 
 /**
  * do stuff
- * @param  {Config} config
+ * @param  {Types.Config} config
  */
 async function main(config) {
 	console.log(config);
