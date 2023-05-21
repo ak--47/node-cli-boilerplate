@@ -37,5 +37,8 @@
     "cSpell.ignorePaths": ["**/**.json"],
     "eslint.format.enable": true,
     "eslint.codeActionsOnSave.mode": "problems",
-    "eslint.enable": true
+    "eslint.enable": true,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	}
 }

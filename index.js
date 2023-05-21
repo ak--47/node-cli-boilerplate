@@ -19,7 +19,7 @@ import u from "ak-tools";
 
 /**
  * do stuff
- * @param  {Types.Config} config
+ * @param  {import('./index.d.ts').Config} config
  */
 async function main(config) {
 	console.log(config);

@@ -4,6 +4,10 @@ const require = createRequire(import.meta.url);
 const { name: NAME, version: VERSION } = require("../package.json");
 
 /**
+ * @typedef {import('../index.d.ts').Config} Config
+ */
+
+/**
  * the CLI for putting the config in the command line
  * @return {Config}
  */
