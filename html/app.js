@@ -117,6 +117,7 @@ function getConfig() {
 	return userData;
 }
 
+// eslint-disable-next-line no-unused-vars
 function validate(config) {
 	//todo
 }
@@ -226,6 +227,7 @@ UTILITIES
 ----
 */
 
+// eslint-disable-next-line no-unused-vars
 const qs = function qs(queryString) {
 	return document.querySelector(queryString);
 };
@@ -234,6 +236,7 @@ const qsa = function qsa(queryString) {
 	return Array.from(document.querySelectorAll(queryString));
 };
 
+// eslint-disable-next-line no-unused-vars
 function comma(num) {
 	return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -285,6 +288,7 @@ function mapObj(object, mapFn) {
 	}, {});
 }
 
+// eslint-disable-next-line no-unused-vars
 function mergeObj(arr) {
 	return arr.reduce(function (acc, current) {
 		for (var key in current) {
