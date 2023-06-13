@@ -9,6 +9,16 @@
 			"name": "scratch",
 			"request": "launch",
 			"type": "node-terminal"
+		},
+		{
+			"type": "node",
+			"request": "launch",
+			"name": "go!!",
+			"runtimeExecutable": "nodemon",
+			"program": "${file}",
+			"restart": true,
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "neverOpen"
 		}
 	]
 }
